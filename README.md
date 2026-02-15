@@ -1,6 +1,6 @@
-# git-dumper
+# J-Git-dumper
 
-A tool to dump a git repository from a website.
+A tool to dump a git repository from a website, when you found .git vulnerability on website attack.
 
 ## Install
 
