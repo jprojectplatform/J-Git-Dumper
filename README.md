@@ -55,6 +55,8 @@ this could lead to remote code execution on your machine.
 
 Simply install the dependencies with pip:
 ```
+python3 -m venv j-git-dumper-env
+source j-git-dumper-env/bin/activate
 pip install -r requirements.txt
 ```
 
