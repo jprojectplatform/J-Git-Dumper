@@ -6,8 +6,26 @@ A tool to dump a git repository from a website, when you found .git vulnerabilit
 
 This can be installed easily with pip:
 ```
-pip install git-dumper
+git clone https://github.com/jprojectplatform/J-Git-Dumper.git
+cd J-Git-Dumper
+
 ```
+
+
+## Build from source
+
+Simply install the dependencies with pip:
+```
+python3 -m venv j-git-dumper-env
+source j-git-dumper-env/bin/activate
+pip install -r requirements.txt
+```
+
+Then, simply use:
+```
+./git_dumper.py http://website.com/.git ~/website
+```
+
 
 ## Usage
 
@@ -51,19 +69,6 @@ git-dumper http://website.com/.git ~/website
 You should know that if the repository you are downloading is controlled by an attacker,
 this could lead to remote code execution on your machine.
 
-## Build from source
-
-Simply install the dependencies with pip:
-```
-python3 -m venv j-git-dumper-env
-source j-git-dumper-env/bin/activate
-pip install -r requirements.txt
-```
-
-Then, simply use:
-```
-./git_dumper.py http://website.com/.git ~/website
-```
 
 ## How does it work?
 
